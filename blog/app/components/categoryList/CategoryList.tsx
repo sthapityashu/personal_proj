@@ -33,7 +33,8 @@ const CategoryList = () => {
             className={styles.image}
           />
           Fashion
-      <Link
+        </Link>
+        <Link
           href="/blog?cat=food"
           className={`${styles.category} ${styles.food}`}
         >
@@ -85,6 +86,7 @@ const CategoryList = () => {
           />
           Coding
         </Link>
+        <Link
           href="/blog?cat=fashion"
           className={`${styles.category} ${styles.fashion}`}
         >
