@@ -1,9 +1,10 @@
 "use client";
 
-import { createContext, useState } from "react";
+// Default
+import { createContext, useEffect, useState } from "react";
 // import { createContext } from "vm";
 
-export const ThemeContext: any = createContext("");
+export const ThemeContext: any = createContext("light");
 
 const getFromLocalStorage = () => {
   if (typeof window !== "undefined") {
@@ -13,11 +14,23 @@ const getFromLocalStorage = () => {
 };
 
 export const ThemeContextProvider = ({ children }: any) => {
-  const [theme, setTheme] = useState(() => {
+  // States
+  const [theme, setTheme] = useState<any>(() => {
     return getFromLocalStorage();
   });
 
+  // Toogle the theme mode
+  const toggle = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
-    <ThemeContext.Provider value={{theme}}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={{ theme, toggle }}>
+      {children}
+    </ThemeContext.Provider>
   );
 };
