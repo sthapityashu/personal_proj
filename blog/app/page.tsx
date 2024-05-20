@@ -9,11 +9,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Featured />
-      <CategoryList/>
+      <CategoryList />
       <div className={styles.content}>
-        <CardList/>
-        <Menu/>
-
+        <CardList />
+        <Menu />
       </div>
     </div>
   );

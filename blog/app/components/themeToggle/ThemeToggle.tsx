@@ -5,10 +5,6 @@ import styles from "./themeToggle.module.css";
 import Image from "next/image";
 import { ThemeContext } from "@/app/context/ThemeContext";
 
-const moon = "https://cdn-icons-png.flaticon.com/512/414/414942.png";
-
-const sun = "https://cdn-icons-png.flaticon.com/512/169/169367.png";
-
 const ThemeToggle = () => {
   const { theme, toggle }: any = useContext(ThemeContext);
   console.log(theme);
@@ -18,10 +14,12 @@ const ThemeToggle = () => {
       className={styles.container}
       onClick={toggle}
       style={
-        theme === "dark" ? { backgroundColor: "white" } : { backgroundColor: "#0f172a" }
+        theme === "dark"
+          ? { backgroundColor: "white" }
+          : { backgroundColor: "#0f172a" }
       }
     >
-      <Image src={moon} width={14} height={14} alt="moon_png" />
+      <Image src="/moon.png" width={14} height={14} alt="moon_png" />
       <div
         className={styles.ball}
         style={
@@ -30,7 +28,7 @@ const ThemeToggle = () => {
             : { right: 1, backgroundColor: "white" }
         }
       ></div>
-      <Image src={sun} width={14} height={14} alt="moon_png" />
+      <Image src="/sun.png" width={14} height={14} alt="moon_png" />
     </div>
   );
 };
