@@ -12,92 +12,96 @@ const CategoryList = () => {
           href="/blog?cat=style"
           className={`${styles.category} ${styles.style}`}
         >
-          <Image
-            src="/style.png"
-            alt=""
-            width={32}
-            height={32}
-            className={styles.image}
-          />
-          Style
+          <div>
+            <Image
+              src="/style.png"
+              alt=""
+              width={32}
+              height={32}
+              className={styles.image}
+            />
+          </div>
+          <div>Style</div>
         </Link>
+
         <Link
-          href="/blog?cat=fashion"
-          className={`${styles.category} ${styles.fashion}`}
+          href="/blog?cat=style"
+          className={`${styles.category} ${styles.style}`}
         >
-          <Image
-            src="/fashion.png"
-            alt=""
-            width={32}
-            height={32}
-            className={styles.image}
-          />
-          Fashion
+          <div>
+            <Image
+              src="/style.png"
+              alt=""
+              width={32}
+              height={32}
+              className={styles.image}
+            />
+          </div>
+          <div>Style</div>
         </Link>
+
         <Link
-          href="/blog?cat=food"
-          className={`${styles.category} ${styles.food}`}
+          href="/blog?cat=style"
+          className={`${styles.category} ${styles.style}`}
         >
-          <Image
-            src="/food.png"
-            alt=""
-            width={32}
-            height={32}
-            className={styles.image}
-          />
-          Food
+          <div>
+            <Image
+              src="/style.png"
+              alt=""
+              width={32}
+              height={32}
+              className={styles.image}
+            />
+          </div>
+          <div>Style</div>
         </Link>
+
         <Link
-          href="/blog?cat=travel"
-          className={`${styles.category} ${styles.travel}`}
+          href="/blog?cat=style"
+          className={`${styles.category} ${styles.style}`}
         >
-          <Image
-            src="/travel.png"
-            alt=""
-            width={32}
-            height={32}
-            className={styles.image}
-          />
-          Travel
+          <div>
+            <Image
+              src="/style.png"
+              alt=""
+              width={32}
+              height={32}
+              className={styles.image}
+            />
+          </div>
+          <div>Style</div>
         </Link>
+
         <Link
-          href="/blog?cat=culture"
-          className={`${styles.category} ${styles.culture}`}
+          href="/blog?cat=style"
+          className={`${styles.category} ${styles.style}`}
         >
-          <Image
-            src="/culture.png"
-            alt=""
-            width={32}
-            height="0"
-            className={styles.image}
-          />
-          Culture
+          <div>
+            <Image
+              src="/style.png"
+              alt=""
+              width={32}
+              height={32}
+              className={styles.image}
+            />
+          </div>
+          <div>Style</div>
         </Link>
+
         <Link
-          href="/blog?cat=coding"
-          className={`${styles.category} ${styles.coding}`}
+          href="/blog?cat=style"
+          className={`${styles.category} ${styles.style}`}
         >
-          <Image
-            src="/coding.png"
-            alt=""
-            width={32}
-            height="0"
-            className={styles.image}
-          />
-          Coding
-        </Link>
-        <Link
-          href="/blog?cat=fashion"
-          className={`${styles.category} ${styles.fashion}`}
-        >
-          <Image
-            src="/fashion.png"
-            alt=""
-            width={32}
-            height={32}
-            className={styles.image}
-          />
-          Fashion
+          <div>
+            <Image
+              src="/style.png"
+              alt=""
+              width={32}
+              height={32}
+              className={styles.image}
+            />
+          </div>
+          <div>Style</div>
         </Link>
       </div>
     </div>
