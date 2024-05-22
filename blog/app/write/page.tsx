@@ -6,7 +6,7 @@ import Image from "next/image";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css";
 
-// Css
+// Css 
 import styles from "./write.module.css";
 
 const Write = () => {
